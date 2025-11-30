@@ -1,1 +1,21 @@
-body{background:#000;color:#fff;}
+body {
+    margin: 0;
+    background: #0a0a0a;
+    color: white;
+    font-family: Arial;
+}
+
+#loginMenu, #mainMenu, #operatorMenu,
+#battlepassMenu, #shopMenu, #settingsMenu {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    margin: 40px;
+}
+
+canvas {
+    display: none;
+    border: 3px solid #fff;
+    background: #111;
+}
