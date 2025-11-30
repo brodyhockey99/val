@@ -1,1 +1,63 @@
-<html><body><h1>FPS Game Placeholder</h1></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web FPS 5v5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginMenu">
+    <h1>Login</h1>
+    <input id="usernameInput" placeholder="Username">
+    <button onclick="login()">Login</button>
+</div>
+
+<!-- MAIN MENU -->
+<div id="mainMenu">
+    <h1>Web FPS</h1>
+    <button onclick="openOperatorMenu()">Choose Operator</button>
+    <button onclick="startGame()">Play 5v5</button>
+    <button onclick="openBattlePass()">Battle Pass</button>
+    <button onclick="openShop()">Shop</button>
+    <button onclick="openSettings()">Settings</button>
+</div>
+
+<!-- OPERATOR MENU -->
+<div id="operatorMenu">
+    <h1>Select Operator</h1>
+    <div id="operatorList"></div>
+    <button onclick="backToMain()">Back</button>
+</div>
+
+<!-- BATTLE PASS -->
+<div id="battlepassMenu">
+    <h1>Battle Pass</h1>
+    <div id="battlepassTiers"></div>
+    <button onclick="backToMain()">Back</button>
+</div>
+
+<!-- SHOP -->
+<div id="shopMenu">
+    <h1>Shop</h1>
+    <div id="shopItems"></div>
+    <button onclick="backToMain()">Back</button>
+</div>
+
+<!-- SETTINGS -->
+<div id="settingsMenu">
+    <h1>Settings</h1>
+    <button onclick="backToMain()">Back</button>
+</div>
+
+<!-- GAME CANVAS -->
+<canvas id="gameCanvas" width="1100" height="650"></canvas>
+
+<script src="login.js"></script>
+<script src="operators.js"></script>
+<script src="battlepass.js"></script>
+<script src="shop.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>
